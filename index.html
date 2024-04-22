@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" ></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root1"></div>
+    <script type="module">
+        const elementType = "p";
+        const elementProps = {className:"greeting", children:"Hello React Js"}       
+        const element = React.createElement(elementType,elementProps)  
+        ReactDOM.render(element,document.getElementById("root"))
+
+        const elementType1 = "p";
+        const elementProps1 = {className:"greeting", children:"Welcome to React JS course React is to learn and build application"}       
+        const element1 = React.createElement(elementType1,elementProps1)  
+        ReactDOM.render(element1,document.getElementById("root1"))
+
+    </script>
+</body>
+</html> 
